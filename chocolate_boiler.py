@@ -1,7 +1,7 @@
 __author__ = 'Corvo'
 
 
-class Singleton(object):
+class singleton(object):
 
     def __init__(self, decorated):
         self._decorated = decorated
@@ -20,7 +20,7 @@ class Singleton(object):
         return isinstance(inst, self._decorated)
 
 
-@Singleton
+@singleton
 class ChocolateBoiler(object):
 
     def __init__(self):
